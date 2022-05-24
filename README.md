@@ -19,3 +19,10 @@ This behaviour is reproducible whether running from Xcode or from a built app.
 Disabling the app sandbox makes no difference.
 
 If anyone with an Intel MacBook could confirm whether it is only an M1 problem, I'd love to hear.
+
+---
+
+Problem solved thanks to Michael on the macOS by Tutorials book forum: https://forums.raywenderlich.com/t/storing-window-settings-experiment-dont-work-for-me/169620/20. 
+
+It seems that if you check **Close windows when quitting an app** in System Preferences > General, then @SceneStorage does nothing.
+I don't remember ever checking this, but it was checked on my MacBook and not on my iMac.
